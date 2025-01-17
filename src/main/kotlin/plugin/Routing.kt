@@ -1,5 +1,6 @@
 package com.purplestudio.plugin
 
+import com.purplestudio.routes.getAllHeroes
 import com.purplestudio.routes.root
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -13,5 +14,6 @@ import org.slf4j.event.*
 fun Application.configureRouting() {
     routing {
         root()
+        getAllHeroes()
     }
 }
