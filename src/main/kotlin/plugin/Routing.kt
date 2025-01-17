@@ -1,4 +1,4 @@
-package com.purplestudio
+package com.purplestudio.plugin
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*

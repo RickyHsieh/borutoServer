@@ -1,4 +1,4 @@
-package com.purplestudio
+package com.purplestudio.plugin
 
 import io.ktor.http.HttpHeaders
 import io.ktor.server.application.Application
