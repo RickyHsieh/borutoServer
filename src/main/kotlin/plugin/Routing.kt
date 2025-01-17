@@ -1,5 +1,6 @@
 package com.purplestudio.plugin
 
+import com.purplestudio.routes.root
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.calllogging.*
@@ -11,8 +12,6 @@ import org.slf4j.event.*
 
 fun Application.configureRouting() {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        root()
     }
 }
