@@ -3,7 +3,7 @@ package com.purplestudio.repository
 import com.purplestudio.models.ApiResponse
 import com.purplestudio.models.Hero
 
-interface HeroRespository {
+interface HeroRepository {
 
     val heroes: Map<Int, List<Hero>>
 
@@ -14,6 +14,6 @@ interface HeroRespository {
     val page5: List<Hero>
 
     suspend fun getAllHeroes(page: Int = 1): ApiResponse
-    suspend fun searchHeroes(name: String): ApiResponse
+    suspend fun searchHeroes(name: String?): ApiResponse
 
 }
