@@ -14,6 +14,3 @@ fun Application.configureKoin() {
         modules(koinModule)
     }
 }
-val koinModule = module {
-    single<HeroRepository> { HeroRespositoryImpl() }
-}
