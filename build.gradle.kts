@@ -1,7 +1,7 @@
 val kotlinVersion: String by project
 val logbackVersion: String by project
-val ktorVersion: String by project
 val koinVersion: String by project
+val ktorVersion: String by project
 
 plugins {
     kotlin("jvm") version "2.1.0"
