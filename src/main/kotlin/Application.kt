@@ -1,5 +1,6 @@
 package com.purplestudio
 
+import com.purplestudio.plugin.*
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -7,9 +8,11 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
+
     configureKoin()
     configureSerialization()
     configureMonitoring()
     configureRouting()
     configureDefaultHeaders()
+    configureStatusPages()
 }
